@@ -1,6 +1,16 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{lipsum}
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath}
+\newcommand\dollars{\$}
+
+\newenvironment{itquote}
+  {\begin{quote}\itshape}
+  {\end{quote}\ignorespacesafterend}
+\newenvironment{itpars}
+  {\par\itshape}
+  {\par}
 
 \title{Learning LaTeX}
 \author{Muhammad Sahal Mulki}
@@ -22,11 +32,57 @@ $$\frac{\sqrt{a^2 + b^2}}{10}$$
 
 \bigskip
 
-AMAZINGLY FASCINATING.....
+AMAZINGLY FASCINATING\dots
 
 \bigskip
 
+I like counting things, like what kind of fruits I have in my kitchen. Let's start.
+
+\begin{enumerate}
+    \item An apple.
+    
+    \item A banana.
+
+    \item Mayonnaise.
+
+    \item $\infty$ Oranges.
+    
+\end{enumerate}
+
 \lipsum[1]
 
+\section{Calculating how much money is gonna be spent on OpenAI's API}
+
+I have a project where I need to use the OpenAI API. Let us calculate how much money that's going to take me. This is my input prompt for the gpt-4o API:
+
+\bigskip
+
+\begin{itpars}You are an Image OSINT Investigator. I will provide you with an image and it's your job to determine where it was taken. By the end of your investigation you have to have at least a rough guess of the image's location. DECIDE ON ONE FINAL LOCATION, EVEN IF IT'S WRONG, JUST GUESS.
+
+\smallskip
+
+Guess where this image was taken, get creative.Here's some AI-generated addresses that could be wrong to get you started. Choose the best out of these if you're uncertain about the image: 
+\begin{enumerate}
+
+\item Acre Subdistrict, North District, Israel
+\item Acre Subdistrict, North District, Israel 
+\item Acre Subdistrict, North District, Israel
+\item Acre Subdistrict, North District, Israel
+\item Acre Subdistrict, North District, Israel
+\end{enumerate}
+\end{itpars}
+
+That is roughly $163$ tokens, which is roughly \dollars0.000815. Following this will be an image with the size $500$ by $500$ which is \dollars0.001275. Finally, let's assume an output of $150$ tokens which is \dollars0.00225. Finally let us calculate the total amount of money a single call would take:
+
+\bigskip
+
+$$ 0.000815 + 0.001275 + 0.00225 = 0.00434$$
+
+\dollars0.00434 is equal to 0.016 United Arab Emirate Dirhams (hereafter referred to as AED). Now let us estimate the amount of money 2000 API calls would take, which is equal to:
+
+$$0.016 \cdot 2000 = 32$$
+
+
+\bigskip
 
 \end{document}
