@@ -72,17 +72,52 @@ Guess where this image was taken, get creative.Here's some AI-generated addresse
 \end{enumerate}
 \end{itpars}
 
-That is roughly $163$ tokens, which is roughly \dollars0.000815. Following this will be an image with the size $500$ by $500$ which is \dollars0.001275. Finally, let's assume an output of $150$ tokens which is \dollars0.00225. Finally let us calculate the total amount of money a single call would take:
+That is $163$ tokens, which is roughly \dollars0.000815. Following this will be an image with the size $500$ by $500$ which is \dollars0.001275. Finally, let's assume an output of $150$ tokens which is \dollars0.00225. Finally let us calculate the total amount of money a single call would take:
 
 \bigskip
 
 $$ 0.000815 + 0.001275 + 0.00225 = 0.00434$$
 
+\bigskip
+
+
 \dollars0.00434 is equal to 0.016 United Arab Emirate Dirhams (hereafter referred to as AED). Now let us estimate the amount of money 2000 API calls would take, which is equal to:
-
-$$0.016 \cdot 2000 = 32$$
-
 
 \bigskip
 
+
+$$0.016 \cdot 2000 = AED32$$
+
+\bigskip
+
+
+32 Dirhams it would take if I was to do a normal API call. But I decide to use the OpenAI Batch API, which has a 50\% discount on every API call, with the disadvantage of taking 24 hours to process a single batch.
+
+\bigskip
+
+$$ AED32 \cdot .5 = AED26$$
+\bigskip
+
+Ok now check this sick matrix out.
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+\end{bmatrix}
+$$
+
+Really sick.
+
+\section{Images.}
+
+I'm new to \LaTeX and don't know how to use images in a document. Let me try now.
+
+\smallskip
+\begin{center}
+\includegraphics[scale = .4]{building.jpg}
+\end{center}
+
+\section{Text formatting}
+
+Text like \textbf{this} can be formatted in \textit{many} \underline{ways}
 \end{document}
