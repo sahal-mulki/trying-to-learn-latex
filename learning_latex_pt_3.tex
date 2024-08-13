@@ -3,8 +3,9 @@
 \usepackage{geometry}
 \usepackage{lipsum}
 \usepackage[skip=10pt, indent=0pt]{parskip}
+\usepackage{minted}
 
-\title{Learning Latex part 3}
+\title{Learning \LaTeX \ :\  Part 3}
 \author{Sahal Mulki}
 \date{August 2024}
 
@@ -25,7 +26,21 @@ This is my 3rd document produced while trying to learn the \LaTeX \ markup langu
 
 Straight-line graphs in a 2-dimensional space can be defined as 
 
-\textbf{$$y = mx + c$$}
+$$y = \underbrace{m}_{gradient/slope}x + \underbrace{c}_{y-intercept}$$
 
+Amazing. \\ 
+
+\section{Code!!!!}
+
+\begin{minted}{Python}
+import random
+
+x = [1, 2, 3, 4, 5]
+
+rando = random.choice(x)
+
+print(str(rando) + "is a random number from x")
+
+\end{minted}
 
 \end{document}
