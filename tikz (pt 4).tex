@@ -1,7 +1,11 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{tikz, pgfplots}
+\usepackage{tikz, pgfplots, array}
+\usepackage[utf8]{inputenc}
 \usetikzlibrary{positioning}
+\usepackage{array, multirow}
+\usepackage[table]{xcolor}
+\usepackage{tabularx, tabulary, tabu, longtable}
 
 \title{tikzcharts}
 \author{Sahal Mulki}
@@ -22,5 +26,12 @@
 \draw (1,0) grid (5,6);
 
 \end{tikzpicture}
+
+\bigbreak
+
+\begin{tabular}{c|c}
+    \hline \cellcolor{yellow} this & and \\ \hline
+    \hline maybe & this \\ \hline
+\end{tabular}
 
 \end{document}
